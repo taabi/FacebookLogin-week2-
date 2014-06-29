@@ -19,6 +19,8 @@
 		13B1C936195FDE0100C02F2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B1C91E195FDE0100C02F2A /* UIKit.framework */; };
 		13B1C93E195FDE0100C02F2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B1C93C195FDE0100C02F2A /* InfoPlist.strings */; };
 		13B1C940195FDE0100C02F2A /* FacebookLogin_week2_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C93F195FDE0100C02F2A /* FacebookLogin_week2_Tests.m */; };
+		13B1C94C195FDE2D00C02F2A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C94A195FDE2D00C02F2A /* MainViewController.m */; };
+		13B1C94D195FDE2D00C02F2A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B1C94B195FDE2D00C02F2A /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		13B1C93B195FDE0100C02F2A /* FacebookLogin(week2)Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookLogin(week2)Tests-Info.plist"; sourceTree = "<group>"; };
 		13B1C93D195FDE0100C02F2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13B1C93F195FDE0100C02F2A /* FacebookLogin_week2_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLogin_week2_Tests.m; sourceTree = "<group>"; };
+		13B1C949195FDE2D00C02F2A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		13B1C94A195FDE2D00C02F2A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		13B1C94B195FDE2D00C02F2A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				13B1C92A195FDE0100C02F2A /* AppDelegate.m */,
 				13B1C92C195FDE0100C02F2A /* Images.xcassets */,
 				13B1C921195FDE0100C02F2A /* Supporting Files */,
+				13B1C949195FDE2D00C02F2A /* MainViewController.h */,
+				13B1C94A195FDE2D00C02F2A /* MainViewController.m */,
+				13B1C94B195FDE2D00C02F2A /* MainViewController.xib */,
 			);
 			path = "FacebookLogin(week2)";
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B1C925195FDE0100C02F2A /* InfoPlist.strings in Resources */,
+				13B1C94D195FDE2D00C02F2A /* MainViewController.xib in Resources */,
 				13B1C92D195FDE0100C02F2A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B1C92B195FDE0100C02F2A /* AppDelegate.m in Sources */,
+				13B1C94C195FDE2D00C02F2A /* MainViewController.m in Sources */,
 				13B1C927195FDE0100C02F2A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +372,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookLogin(week2)/FacebookLogin(week2)-Prefix.pch";
 				INFOPLIST_FILE = "FacebookLogin(week2)/FacebookLogin(week2)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +386,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookLogin(week2)/FacebookLogin(week2)-Prefix.pch";
 				INFOPLIST_FILE = "FacebookLogin(week2)/FacebookLogin(week2)-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
