@@ -8,9 +8,11 @@
             <connections>
                 <outlet property="emailField" destination="dG0-j9-iGG" id="me4-CM-sfh"/>
                 <outlet property="formView" destination="4Ye-Qd-3KW" id="wDR-kZ-lZO"/>
+                <outlet property="loader" destination="Vlf-TU-K1p" id="ZXB-T1-2mp"/>
                 <outlet property="loginButton" destination="OYB-30-d0M" id="ZzH-w6-aDL"/>
                 <outlet property="logoView" destination="Lp8-Si-TwP" id="VPr-3n-JSu"/>
                 <outlet property="passwordField" destination="5r7-ch-qaE" id="18E-WM-gFk"/>
+                <outlet property="signupButton" destination="q8S-P7-xMM" id="Hqj-6L-xFv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,13 +21,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-1i-fWp">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="l8F-1i-fWp">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lp8-Si-TwP">
-                    <rect key="frame" x="40" y="104" width="240" height="77"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="s26-qI-9y7" appends="YES" id="IE1-vY-hm0"/>
+                    </connections>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-30-d0M">
                     <rect key="frame" x="8" y="308" width="303" height="52"/>
@@ -38,6 +40,36 @@
                         <action selector="LoginAction:" destination="-1" eventType="touchUpInside" id="aQS-y3-dmG"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8S-P7-xMM">
+                    <rect key="frame" x="94" y="483" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Sign Up for Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB7-rz-Ykx">
+                    <rect key="frame" x="94" y="521" width="132" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Help Center">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Vlf-TU-K1p">
+                    <rect key="frame" x="269" y="324" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lp8-Si-TwP">
+                    <rect key="frame" x="40" y="104" width="240" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                    </accessibility>
+                    <gestureRecognizers/>
+                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ye-Qd-3KW">
                     <rect key="frame" x="-10" y="209" width="340" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,6 +94,10 @@
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="EditChanged:" destination="-1" eventType="editingChanged" id="PgO-Hb-3zA"/>
+                                <action selector="onEdit:" destination="-1" eventType="editingDidBegin" id="XJt-vN-w3G"/>
+                            </connections>
                         </textField>
                     </subviews>
                 </view>
@@ -70,6 +106,11 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer id="s26-qI-9y7">
+            <connections>
+                <action selector="onTap:" destination="-1" id="Ku1-ys-vQh"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="bg" width="320" height="568"/>

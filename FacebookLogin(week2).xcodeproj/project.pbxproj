@@ -21,6 +21,8 @@
 		13B1C940195FDE0100C02F2A /* FacebookLogin_week2_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C93F195FDE0100C02F2A /* FacebookLogin_week2_Tests.m */; };
 		13B1C94C195FDE2D00C02F2A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C94A195FDE2D00C02F2A /* MainViewController.m */; };
 		13B1C94D195FDE2D00C02F2A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B1C94B195FDE2D00C02F2A /* MainViewController.xib */; };
+		13B1C9511961214500C02F2A /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B1C94F1961214400C02F2A /* FeedViewController.m */; };
+		13B1C9521961214500C02F2A /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B1C9501961214400C02F2A /* FeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		13B1C949195FDE2D00C02F2A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		13B1C94A195FDE2D00C02F2A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		13B1C94B195FDE2D00C02F2A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		13B1C94E1961214400C02F2A /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		13B1C94F1961214400C02F2A /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		13B1C9501961214400C02F2A /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,9 @@
 				13B1C923195FDE0100C02F2A /* InfoPlist.strings */,
 				13B1C926195FDE0100C02F2A /* main.m */,
 				13B1C928195FDE0100C02F2A /* FacebookLogin(week2)-Prefix.pch */,
+				13B1C94E1961214400C02F2A /* FeedViewController.h */,
+				13B1C94F1961214400C02F2A /* FeedViewController.m */,
+				13B1C9501961214400C02F2A /* FeedViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			files = (
 				13B1C925195FDE0100C02F2A /* InfoPlist.strings in Resources */,
 				13B1C94D195FDE2D00C02F2A /* MainViewController.xib in Resources */,
+				13B1C9521961214500C02F2A /* FeedViewController.xib in Resources */,
 				13B1C92D195FDE0100C02F2A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +259,7 @@
 			files = (
 				13B1C92B195FDE0100C02F2A /* AppDelegate.m in Sources */,
 				13B1C94C195FDE2D00C02F2A /* MainViewController.m in Sources */,
+				13B1C9511961214500C02F2A /* FeedViewController.m in Sources */,
 				13B1C927195FDE0100C02F2A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
