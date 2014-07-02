@@ -177,6 +177,8 @@ BOOL checkMove = FALSE;
         
         self.loginButton.frame = CGRectMake(self.loginButton.frame.origin.x,self.loginButton.frame.origin.y + 50, self.loginButton.frame.size.width, self.loginButton.frame.size.height);
         
+        self.loader.frame = CGRectMake(self.loader.frame.origin.x,self.loader.frame.origin.y + 50, self.loader.frame.size.width, self.loader.frame.size.height);
+        
         self.signupButton.frame = CGRectMake(self.signupButton.frame.origin.x,self.signupButton.frame.origin.y + 170, self.signupButton.frame.size.width, self.signupButton.frame.size.height);
         
         [UIView commitAnimations];
