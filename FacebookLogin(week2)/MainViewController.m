@@ -112,7 +112,7 @@ BOOL checkMove = FALSE;
     }else{
         NSLog(@"Bad Login");
         [self closeForm];
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:Nil message:@"Invalid Username or Password." delegate:self  cancelButtonTitle:@"Ok" otherButtonTitles:Nil, nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Ooops!" message:@"Invalid Username or Password." delegate:self  cancelButtonTitle:@"Ok" otherButtonTitles:Nil, nil];
         [alertView show];
         
     }
