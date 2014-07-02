@@ -2,18 +2,28 @@ FacebookLogin-week2-
 ====================
  Total Hours: 8
  
-[completed]Facebook login page
+[completed]Facebook login page.
+
 [completed]Tapping in the UITextField repositions the elements, as shown in the screenshots.
+
 [completed]Tapping anywhere dismisses the keyboard
+
 [completed]If email and password field are both blank, button should be disabled.
+
 [completed]Password field should be secure with no autocorrection.
+
 [completed]After tapping log in button, show the loading indicator in the button. After a 2 second delay, check the password.
+
 [completed]If the password is 'password', transition to the next screen.
+
 [completed]If the password is anything else, display the password error alert.
 
 [completed]Facebook feed
+
 [completed]Navigation bar should have the search button and messages button.
+
 [completed]Immediately after launch, display the loading indicator.
+
 [completed]After 2 seconds, show the feed, which is a long image in a scrollable view.
  
  
