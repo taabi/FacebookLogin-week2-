@@ -44,7 +44,7 @@
     // Do any additional setup after loading the view from its nib.
     
     // Configure the left button
-    UIImage *leftButtonImage = [[UIImage imageNamed:@"back_btn"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *leftButtonImage = [[UIImage imageNamed:@"search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:leftButtonImage style:UIBarButtonItemStylePlain target:self action:@selector(onLeftButton)];
     self.navigationItem.leftBarButtonItem = leftButton;
     
