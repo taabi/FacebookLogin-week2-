@@ -38,3 +38,5 @@ FacebookLogin-week2-
 
 
 demo.gif in the folder
+
+![animated gif](https://raw.githubusercontent.com/taabi/FacebookLogin-week2-/master/demo.gif)
